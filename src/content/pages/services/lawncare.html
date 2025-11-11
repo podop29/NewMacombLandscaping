@@ -1,0 +1,111 @@
+---
+title: 'Lawn Care serviced in Macomb MI'
+description: 'Professional lawn care services in Macomb, Shelby, and Chesterfield. We provide mulching, hardscapes, tree trimming, sod replacement, and more — with free estimates and guaranteed quality.'
+preloadImg: ''
+permalink: 'services/lawncare'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+      <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Lawn Care Services</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-background.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero-background.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero-background.webp" alt="Grass with a lawnmower" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/lawncare.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/lawncare.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/lawncare.jpg" alt="people" width="542" height="728">
+                </picture>
+            </div>
+          
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">Lawn Care</span> Services in Macomb, MI</h1>
+            <h3>Reliable Lawn Care for Homes and Businesses</h3>
+            <p>
+                Your lawn is one of the first things people notice about your property — and we make sure it looks its best. At Macomb Landscaping Services, we provide dependable, professional lawn care for both residential and commercial clients across Macomb, Shelby Township, Chesterfield, and the surrounding Southeast Michigan communities.
+            </p>
+            <p>
+                Whether you’re looking for weekly mowing, seasonal maintenance, or a full-service care plan, our team delivers the expertise and reliability your property deserves.
+            </p>
+            <h2>Our Lawn Care Options</h2>
+            <h3>Weekly Mowing Service (Most Popular)</h3>
+            <p>Our most popular and recommended plan for maintaining a healthy, well-groomed lawn.</p>
+            <ol>
+                <li>Weekly mowing to keep grass at the ideal height</li>
+                <li>Biweekly edging and trimming around driveways, sidewalks, and landscape beds</li>
+                <li>Full blowout of grass clippings and debris for a polished finish</li>
+            </ol>
+            <p>Consistent care means your lawn stays lush, clean, and vibrant all season long.</p>
+
+            <h3>Biweekly Service</h3>
+            <ul>
+                <li>Mowing, trimming, edging, and blowing every other week</li>
+                <li>Perfect for slower-growing lawns or vacation properties</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <p>Please note: longer intervals between cuts can result in more clippings and heavier equipment wear, but we’ll always make sure your lawn looks great after each visit.</p>
+
+            <h3>Commercial Monthly Service</h3>
+            <p>Designed for business properties and large lots that need consistent upkeep.</p>
+
+            <ul>
+                <li>Regular mowing, trimming, and blowing</li>
+                <li>Mulching of clippings to 1 inch or less for a clean, natural look</li>
+                <li>Bagging services available upon request</li>
+            </ul>
+            <p>We maintain office parks, retail centers, apartment complexes, and more — keeping your property professional and inviting year-round.</p>
+
+            <h2>Additional Lawn Care Services</h2>
+            <ul>
+                <li>Spring and Fall Cleanups – Remove leaves, debris, and winter buildup.</li>
+                <li>Aeration & Overseeding – Improve soil health and promote new growth.</li>
+                <li>Edging & Trimming – Define driveways, sidewalks, and garden beds.</li>
+                <li>Fertilization Plans – Keep your lawn thick and green throughout the season.</li>
+            </ul>
+            <p>Ask about our seasonal lawn care packages for the best value and consistent results.</p>
+
+            
+            <h2>Why Choose Macomb Landscaping Services?</h2>
+            <ul>
+                <li>Locally owned and operated — serving Macomb County and nearby communities</li>
+                <li>Fully insured, professional, and experienced crew</li>
+                <li>Clear communication and transparent pricing</li>
+                <li>Free estimates and no payment until work is complete</li>
+            </ul>
+            <p>We take pride in every lawn we service, ensuring our clients receive the same quality we’d expect for our own homes.</p>
+        </div>
+    </div>
+    
+</section>
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

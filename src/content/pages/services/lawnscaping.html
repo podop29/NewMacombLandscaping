@@ -1,0 +1,106 @@
+---
+title: 'Landscaping Services in Macomb MI'
+description: 'Professional landscaping services in Macomb, Shelby, and Chesterfield. We provide mulching, hardscapes, tree trimming, sod replacement, and more — with free estimates and guaranteed quality.'
+preloadImg: ''
+permalink: 'services/landscaping'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+      <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Landscaping Services</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-background.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero-background.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero-background.webp" alt="landscaping work with mulch and plants" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/landscaping.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/landscaping.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/landscaping.jpg" alt="landscaping team laying mulch" width="542" height="728">
+                </picture>
+            </div>
+        </div>
+
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">Landscaping</span> Services in Macomb, MI</h1>
+            <h3>Comprehensive Landscaping for Homes and Businesses</h3>
+            <p>
+                At Macomb Landscaping Services, we handle everything from simple mulch refreshes to complete landscape transformations. 
+                Our experienced team provides professional landscaping solutions across Macomb, Shelby Township, and Chesterfield—helping your property stand out in every season.
+            </p>
+            <p>
+                Whether you’re improving curb appeal, refreshing existing beds, or planning a full redesign, we’ll bring your vision to life with skill, care, and attention to detail.
+            </p>
+
+            <h2>Our Landscaping Services</h2>
+            <h3>Mulching</h3>
+            <p>
+                Our most popular service, mulching improves curb appeal while protecting soil and reducing weed growth. We offer various mulch colors and materials to match your property’s aesthetic.
+            </p>
+
+            <h3>Hardscaping & Rock Work</h3>
+            <p>
+                From decorative stone borders to retaining walls and walkways, our team designs and installs durable, visually striking hardscapes that enhance your outdoor spaces.
+            </p>
+
+            <h3>Tree & Shrub Trimming</h3>
+            <p>
+                Maintain the health and appearance of your trees and shrubs with professional trimming and pruning services, ensuring your landscape stays clean and well-balanced.
+            </p>
+
+            <h3>Sod Installation & Replacement</h3>
+            <p>
+                Need a fresh start? We install and replace sod to create a healthy, green lawn instantly—perfect for new builds, damaged areas, or complete yard makeovers.
+            </p>
+
+            <h3>Sprinkler Systems</h3>
+            <p>
+                Unlike many landscaping companies, we specialize in sprinkler installation, maintenance, and seasonal start-ups and shut-downs. 
+                We even warranty against freeze damage for systems winterized by our team.
+            </p>
+
+            <h2>Why Choose Macomb Landscaping Services?</h2>
+            <ul>
+                <li>Fully insured and trusted by Macomb homeowners and businesses</li>
+                <li>Comprehensive landscaping and irrigation expertise under one roof</li>
+                <li>Free, no-obligation estimates with upfront pricing</li>
+                <li>All work completed before final payment—your satisfaction guaranteed</li>
+            </ul>
+            <p>
+                We take pride in delivering clean, professional results that make your property stand out. 
+                Whether it’s mulch, stone, or a complete redesign, we approach every project with precision and care.
+            </p>
+
+            <h2>Get Your Free Landscaping Estimate</h2>
+            <p>
+                Ready to transform your outdoor space? Contact <strong>Macomb Landscaping Services</strong> today for a free estimate on any residential or commercial landscaping project.
+            </p>
+        </div>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

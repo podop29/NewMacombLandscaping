@@ -1,0 +1,479 @@
+---
+title: 'Macomb Landscaping Services'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/hero-background.webp'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1467">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Macomb Landscaping Services</h1>
+            <p class="cs-text">
+               From summer lawn care to winter snow removal, we proudly serve Macomb County, Shelby Township, Chesterfield, and nearby communities, with dependable residential and commercial property maintenance.
+             </p>
+            <a href="" class="cs-button-solid">Call Us Now</a>
+            
+        </div>
+        <div class="cs-right">
+            <div class="cs-flex">
+                <h3 class="cs-h3">Lets get started!</h3>
+                <p class="cs-form-text">
+                    Request a free* No-Obligation quote & expert advice from our expert team!
+                </p>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1467" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1467" name="name">
+                </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" required type="tel" id="phone-1467" name="phone">
+                </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1467" name="email">
+                </label>
+                <label class="cs-label">
+                    How did you hear about us?
+                    <input class="cs-input" required type="text" id="hear-1467" name="heat">
+                </label>
+                <label class="cs-label cs-message">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1467"></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Request consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset=" ">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero-background.webp">
+        <img loading="lazy" decoding="async" src="/assets/images/hero-background.webp" alt="beautiful landscaped lawn background" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>
+                 
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1083">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">Expert lawn care in Macomb and nearby communities</h2>
+            <p class="cs-text">
+                Providing expert lawn mowing, edging, and seasonal maintenance throughout Macomb, Shelby, and Chesterfield—dependable care you can count on year-round.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/lawncare.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/lawncare.jpg">
+                    <img  loading="lazy" decoding="async" src="/assets/images/services/lawncare.jpg" alt="professional lawn mowing and maintenance services" width="413" height="240" aria-hidden="true">
+                </picture>
+                <h3  class="cs-h3">               
+                    Lawn Care
+                </h3>
+                <p class="cs-item-text">
+                    Our professional lawn care services keep your property looking its best with weekly, biweekly, and commercial maintenance options. From precise mowing and edging to trimming and debris removal, we deliver clean, healthy, and well-maintained lawns across Macomb and surrounding areas.
+                </p>
+                <a href="services/lawncare"  class="cs-link">
+                    Read More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/landscaping.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/landscaping.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/landscaping.jpg" alt="landscaping with mulch, plants, and hardscapes" width="413" height="240" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">                
+                    Landscaping
+                </h3>
+                <p class="cs-item-text">
+                    We provide complete landscaping services for homes and businesses, including mulching, tree trimming, rock installation, hardscapes, and sod replacement. Fully insured and backed by excellent customer reviews, we offer free estimates and guarantee all work is completed before payment.
+                </p>
+                <a href="" class="cs-link">
+                    Read More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/irrigation.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/irrigation.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/irrigation.jpg" alt="sprinkler system and irrigation services" width="413" height="240" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">                 
+                    Irrigation
+                </h3>
+                <p class="cs-item-text">
+                   Unlike most companies, we handle all sprinkler system needs—from start-ups and shut-downs to backflow testing, control box repairs, and multi-zone maintenance. Our Michigan-based team ensures your system runs smoothly year-round, and we fully warranty any freeze damage if your shut-down was done by us.
+                </p>
+                <a href="" class="cs-link">
+                    Read More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/guttercleaning.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/guttercleaning.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/guttercleaning.jpg" alt="professional gutter cleaning and maintenance" width="413" height="240" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">                
+                    Gutter Cleaning
+                </h3>
+                <p class="cs-item-text">
+                    Protect your home with professional gutter cleaning done twice a year to prevent clogs and water damage. Regular maintenance extends the life of your roof and gutters while keeping your home’s exterior clean and well-maintained.
+                </p>
+                <a href="" class="cs-link">
+                    Read More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/weeding.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/weeding.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/weeding.jpg" alt="weed control and removal services" width="413" height="240" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">                 
+                   Weeding
+                </h3>
+                <p class="cs-item-text">
+                   Keep your property looking clean and professional with our seasonal weed control services. We offer monthly contracts to pull and spray weeds in mulch beds, pavement cracks, and other problem areas—so you can enjoy a neat, well-kept landscape all season long.
+                </p>
+                <a href="" class="cs-link">
+                    Read More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/services/snow-cleanup.jpeg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/services/snow-cleanup.jpeg">
+                    <img loading="lazy" decoding="async" src="/assets/images/services/snow-cleanup.jpeg" alt="snow removal and plowing services" width="413" height="240" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">                
+                   Snow Removal
+                </h3>
+                <p class="cs-item-text">
+                    We provide reliable snow removal for both residential and commercial clients with seasonal and per-push rate options. Our team clears lots and walkways before business hours, offering premium contracts with priority service and deicing, as well as budget-friendly plans—plus an early sign-up discount when you book before August.
+                </p>
+                <a href="" class="cs-link">
+                    Read More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                Areas We Serve                -->
+<!-- ============================================ -->
+
+<section id="areas-serve-1201">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Service Areas</span>
+            <h2 class="cs-title">Proudly Serving Macomb County and Surrounding Communities</h2>
+            <p class="cs-text">
+                We provide professional landscaping and lawn care services throughout Macomb County and nearby areas. Our team is committed to delivering exceptional service to both residential and commercial properties.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-icon-wrapper">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C16.268 4 10 10.268 10 18C10 28.5 24 44 24 44C24 44 38 28.5 38 18C38 10.268 31.732 4 24 4ZM24 23C21.239 23 19 20.761 19 18C19 15.239 21.239 13 24 13C26.761 13 29 15.239 29 18C29 20.761 26.761 23 24 23Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h3 class="cs-h3">Macomb Township</h3>
+                <p class="cs-item-text">
+                    Comprehensive lawn care and landscaping services for Macomb Township residents and businesses.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-icon-wrapper">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C16.268 4 10 10.268 10 18C10 28.5 24 44 24 44C24 44 38 28.5 38 18C38 10.268 31.732 4 24 4ZM24 23C21.239 23 19 20.761 19 18C19 15.239 21.239 13 24 13C26.761 13 29 15.239 29 18C29 20.761 26.761 23 24 23Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h3 class="cs-h3">Shelby Township</h3>
+                <p class="cs-item-text">
+                    Professional landscaping and seasonal maintenance for Shelby Township properties.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-icon-wrapper">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C16.268 4 10 10.268 10 18C10 28.5 24 44 24 44C24 44 38 28.5 38 18C38 10.268 31.732 4 24 4ZM24 23C21.239 23 19 20.761 19 18C19 15.239 21.239 13 24 13C26.761 13 29 15.239 29 18C29 20.761 26.761 23 24 23Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h3 class="cs-h3">Chesterfield</h3>
+                <p class="cs-item-text">
+                    Dependable lawn care and landscaping solutions for Chesterfield area homes and businesses.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-icon-wrapper">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C16.268 4 10 10.268 10 18C10 28.5 24 44 24 44C24 44 38 28.5 38 18C38 10.268 31.732 4 24 4ZM24 23C21.239 23 19 20.761 19 18C19 15.239 21.239 13 24 13C26.761 13 29 15.239 29 18C29 20.761 26.761 23 24 23Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h3 class="cs-h3">Sterling Heights</h3>
+                <p class="cs-item-text">
+                    Quality landscaping and lawn maintenance services throughout Sterling Heights.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-icon-wrapper">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C16.268 4 10 10.268 10 18C10 28.5 24 44 24 44C24 44 38 28.5 38 18C38 10.268 31.732 4 24 4ZM24 23C21.239 23 19 20.761 19 18C19 15.239 21.239 13 24 13C26.761 13 29 15.239 29 18C29 20.761 26.761 23 24 23Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h3 class="cs-h3">Clinton Township</h3>
+                <p class="cs-item-text">
+                    Expert lawn care and landscaping for Clinton Township residential and commercial clients.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-icon-wrapper">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C16.268 4 10 10.268 10 18C10 28.5 24 44 24 44C24 44 38 28.5 38 18C38 10.268 31.732 4 24 4ZM24 23C21.239 23 19 20.761 19 18C19 15.239 21.239 13 24 13C26.761 13 29 15.239 29 18C29 20.761 26.761 23 24 23Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h3 class="cs-h3">Surrounding Areas</h3>
+                <p class="cs-item-text">
+                    We also serve Washington Township, Rochester Hills, Troy, and other nearby communities.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1897">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Gallery</span>
+                <h2 class="cs-title">Witness The Difference and Our Results</h2>
+            </div>
+            <a class="cs-button-solid" href="">View All</a>
+        </div>
+        <!--Gallery-->
+        <div class="cs-gallery">
+            <div class="cs-item">
+                <p class="cs-item-text">Tree removal and landscaping transformation</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/treeBefore.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/treeBefore.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/treeBefore.jpeg" alt="lawn before tree removal">
+                    </picture>
+                    <span class="cs-tag">Before</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/treeAfter.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/treeAfter.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/treeAfter.jpeg" alt="lawn after tree removal and cleanup">
+                    </picture>
+                    <span class="cs-tag">After</span>
+                </div>
+            </div>
+            <div class="cs-item">
+                <p class="cs-item-text">Professional lawn care and maintenance</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/frontLawn.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/frontLawn.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/frontLawn.jpeg" alt="professionally maintained front lawn">
+                    </picture>
+                    <span class="cs-tag">Project 1</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/lawn2.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/lawn2.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/lawn2.jpeg" alt="well-maintained residential lawn">
+                    </picture>
+                    <span class="cs-tag">Project 2</span>
+                </div>
+            </div>
+            <div class="cs-item">
+                <p class="cs-item-text">Mulching and tree landscaping services</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/treeMulch.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/treeMulch.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/treeMulch.jpeg" alt="tree mulching and landscaping">
+                    </picture>
+                    <span class="cs-tag">Mulching</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/treeLawn.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/treeLawn.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/treeLawn.jpeg" alt="tree and lawn maintenance">
+                    </picture>
+                    <span class="cs-tag">Landscape</span>
+                </div>
+            </div>
+            <div class="cs-item">
+                <p class="cs-item-text">Backyard and side yard landscaping projects</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/backyard.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/backyard.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/backyard.jpeg" alt="backyard landscaping and lawn care">
+                    </picture>
+                    <span class="cs-tag">Backyard</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/sidelawn.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/sidelawn.jpeg">
+                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/sidelawn.jpeg" alt="side yard lawn maintenance">
+                    </picture>
+                    <span class="cs-tag">Side Yard</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1672">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Our Customer Reviews</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <span class="cs-name">
+                        Philip Sutarov                    
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    These guys are the best they provide fast and quality services and they are super friendly. The guy who worked on my house Boris worked hard throughout the day to the end of the night to finish our front yard. They should charge more for their services.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+
+                    <span class="cs-name">
+                       Sandra Pisching
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Macomb Landscaping Services did an excellent job on cleaning up my flower beds in the front. Boris cut my bushes, weeded, edged and mulched. He took his time and made sure that everything was done right. Macomb Landscaping also cuts my lawn every week. I highly recommend them for any of your landscaping needs.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <span class="cs-name">
+                        Jake Baxa
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Worked under these fine gentlemen for 1 cutting season. Super professional, placing the customer’s concerns first. Great benefits! The expectations are reasonable.
+As a customer, always took great care of my lawn. Super friendly employees and always professional.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+        </ul>
+        <div class="cs-button-group">
+            <a href="https://g.co/kgs/n6MgfG" class="cs-button-solid" target="_blank" rel="noopener">Review Us on Google</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    {% include 'components/cta.html' %}
+{% endblock %}

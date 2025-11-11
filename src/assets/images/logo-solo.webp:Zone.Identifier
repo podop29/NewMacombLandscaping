@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/b3737321-fd96-4e2a-9bad-4ee8ce439cef/logo-solo.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20251111%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20251111T200536Z&X-Amz-Expires=86400&X-Amz-Signature=6200c5f34a7c8be6aec0ac5bea0aa080945ac75a203138ec36d4e7afd1674deb&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22logo-solo.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

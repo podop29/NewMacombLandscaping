@@ -1,0 +1,68 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: ''
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-background.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero-background.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero-background.webp" alt="Grass with a lawnmower" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">About Macomb Landscaping Services</h2>
+                <p class="cs-text">
+                    Macomb Landscaping Services began with a simple question — why isn’t there one company that does it all? From lawn care and landscaping to gutter cleaning and irrigation, we set out to be that all-in-one solution. Five years later, we’re proud to serve our community with reliable, high-quality service built on integrity and attention to detail.
+                </p>
+                <p class="cs-text">
+We take pride in clear communication, exceptional customer service, and fair, transparent pricing. Your home or business is one of your biggest investments, and our goal is to enhance its curb appeal—not just maintain it. Call or text us today for a free estimate and experience the difference of a company that truly cares. 
+                </p>             
+                <a href="/contact" class="cs-button-solid">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
