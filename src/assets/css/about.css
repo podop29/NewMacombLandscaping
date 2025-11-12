@@ -166,5 +166,342 @@
     opacity: 0.2;
   }
 }
+/*-- -------------------------- -->
+<---       Why Choose Us        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose {
+    padding: var(--sectionPadding);
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/testimonials-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #why-choose .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #why-choose .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #why-choose .cs-topper {
+    color: var(--primary);
+  }
+  #why-choose .cs-title {
+    color: #fff;
+    max-width: 25ch;
+  }
+  #why-choose .cs-text {
+    color: #fff;
+    max-width: 60ch;
+    opacity: 0.9;
+  }
+  #why-choose .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  #why-choose .cs-item {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    grid-column: span 12;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #why-choose .cs-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  }
+  #why-choose .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #why-choose .cs-picture {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  #why-choose .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+  }
+  #why-choose .cs-item-content {
+    padding: clamp(1.5rem, 3vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #why-choose .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+  }
+  #why-choose .cs-item-text {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose .cs-item {
+    grid-column: span 6;
+  }
+  #why-choose .cs-picture {
+    height: 16.25rem;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose .cs-item {
+    grid-column: span 4;
+  }
+  #why-choose .cs-picture {
+    height: 17.5rem;
+  }
+}
+/*-- -------------------------- -->
+<---        Our Story           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #our-story {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+  }
+  #our-story .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #our-story .cs-image-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  #our-story .cs-picture {
+    width: 100%;
+    height: 18.75rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    grid-column: span 12;
+  }
+  #our-story .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #our-story .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #our-story .cs-topper {
+    text-align: left;
+    margin-bottom: 0.25rem;
+  }
+  #our-story .cs-title {
+    text-align: left;
+    max-width: 25ch;
+  }
+  #our-story .cs-text {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  #our-story .cs-text:last-of-type {
+    margin-bottom: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #our-story .cs-picture {
+    grid-column: span 6;
+    height: 25rem;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #our-story .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #our-story .cs-image-group {
+    width: 48%;
+    flex: none;
+  }
+  #our-story .cs-content {
+    width: 48%;
+    flex: none;
+  }
+  #our-story .cs-picture {
+    height: 21.875rem;
+  }
+}
+/*-- -------------------------- -->
+<---     Services Overview      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-overview {
+    padding: var(--sectionPadding);
+    background-color: #fff;
+  }
+  #services-overview .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-overview .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #services-overview .cs-title {
+    max-width: 25ch;
+  }
+  #services-overview .cs-services-list {
+    width: 100%;
+    max-width: 56.25rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  #services-overview .cs-service-item {
+    list-style: none;
+    width: 100%;
+    /* 24px - 32px */
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    border-left: 4px solid var(--primary);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #services-overview .cs-service-item:hover {
+    transform: translateX(0.5rem);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  #services-overview .cs-service-title {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+  }
+  #services-overview .cs-service-text {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-overview .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 12.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 3.125rem;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  #services-overview .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #services-overview .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-overview .cs-service-item {
+    grid-column: span 6;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-overview .cs-service-item {
+    grid-column: span 6;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */
