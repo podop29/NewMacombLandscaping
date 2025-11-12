@@ -685,6 +685,9 @@
     /* 40px - 64px */
     gap: clamp(2.5rem, 4.5vw, 4rem);
   }
+  #reviews-1672 .cs-button-solid {
+    color: white;
+  }
   #reviews-1672 .cs-content {
     text-align: left;
     width: 100%;
