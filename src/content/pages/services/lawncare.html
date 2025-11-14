@@ -9,6 +9,95 @@ permalink: 'services/lawncare/'
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/services.css">
+    <script defer src="/assets/js/faq.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should I have my lawn mowed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend weekly mowing during the growing season to keep grass at the ideal height and maintain a healthy, well-groomed lawn. Weekly mowing prevents excessive clipping buildup and ensures your lawn stays lush, clean, and vibrant all season long."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's included in your weekly lawn care service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our weekly service includes mowing to keep grass at the ideal height, biweekly edging and trimming around driveways, sidewalks, and landscape beds, and a full blowout of grass clippings and debris for a polished finish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between weekly and biweekly mowing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Weekly mowing is ideal for maintaining a consistently manicured lawn during peak growth. Biweekly service works well for slower-growing lawns or vacation properties. However, longer intervals between cuts can result in more clippings and heavier equipment wear, though we always ensure your lawn looks great after each visit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer lawn care for commercial properties?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide commercial monthly service designed for business properties and large lots. This includes regular mowing, trimming, blowing, and mulching of clippings to 1 inch or less. We maintain office parks, retail centers, apartment complexes, and more—keeping your property professional and inviting year-round."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does lawn care cost in Macomb, MI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing varies based on lawn size, service frequency, and specific services needed. We provide clear, transparent pricing and free estimates so you know exactly what to expect before we begin work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer spring and fall cleanup services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide seasonal spring and fall cleanups to remove leaves, debris, and winter buildup. These services help prepare your lawn for the growing season and protect it during winter months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is lawn aeration and overseeding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aeration improves soil health by creating small holes that allow air, water, and nutrients to penetrate deeper into the root zone. Overseeding involves spreading grass seed over existing turf to promote new growth, fill in bare spots, and create a thicker, healthier lawn."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide fertilization services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer fertilization plans to keep your lawn thick and green throughout the season. Ask about our seasonal lawn care packages for the best value and consistent results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do I pay for lawn care services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No payment is due until work is complete. We provide free estimates and only collect payment after you're satisfied with the service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve for lawn care?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve Macomb, Shelby Township, Chesterfield, and surrounding Southeast Michigan communities. We're locally owned and operated, serving Macomb County and nearby areas with dependable, professional lawn care."
+          }
+        }
+      ]
+    }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -98,13 +187,146 @@ permalink: 'services/lawncare/'
                 <li>Clear communication and transparent pricing</li>
                 <li>Free estimates and no payment until work is complete</li>
             </ul>
-            <p>We take pride in every lawn we service, ensuring our clients receive the same quality we’d expect for our own homes.</p>
+            <p>We take pride in every lawn we service, ensuring our clients receive the same quality we'd expect for our own homes.</p>
         </div>
     </div>
-    
 </section>
-                                
 
-    {% include 'components/cta.html' %}
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1404">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">FAQ</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="cs-faq-group">
+      <!-- FAQ Item 1 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">How often should I have my lawn mowed?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            We recommend weekly mowing during the growing season to keep grass at the ideal height and maintain a healthy, well-groomed lawn. Weekly mowing prevents excessive clipping buildup and ensures your lawn stays lush, clean, and vibrant all season long.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">What's included in your weekly lawn care service?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Our weekly service includes mowing to keep grass at the ideal height, biweekly edging and trimming around driveways, sidewalks, and landscape beds, and a full blowout of grass clippings and debris for a polished finish.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">What's the difference between weekly and biweekly mowing?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Weekly mowing is ideal for maintaining a consistently manicured lawn during peak growth. Biweekly service works well for slower-growing lawns or vacation properties. However, longer intervals between cuts can result in more clippings and heavier equipment wear, though we always ensure your lawn looks great after each visit.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 4 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">Do you offer lawn care for commercial properties?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Yes. We provide commercial monthly service designed for business properties and large lots. This includes regular mowing, trimming, blowing, and mulching of clippings to 1 inch or less. We maintain office parks, retail centers, apartment complexes, and more—keeping your property professional and inviting year-round.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 5 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">How much does lawn care cost in Macomb, MI?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Pricing varies based on lawn size, service frequency, and specific services needed. We provide clear, transparent pricing and free estimates so you know exactly what to expect before we begin work.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 6 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">Do you offer spring and fall cleanup services?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Yes. We provide seasonal spring and fall cleanups to remove leaves, debris, and winter buildup. These services help prepare your lawn for the growing season and protect it during winter months.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 7 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">What is lawn aeration and overseeding?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Aeration improves soil health by creating small holes that allow air, water, and nutrients to penetrate deeper into the root zone. Overseeding involves spreading grass seed over existing turf to promote new growth, fill in bare spots, and create a thicker, healthier lawn.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 8 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">Do you provide fertilization services?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            Yes. We offer fertilization plans to keep your lawn thick and green throughout the season. Ask about our seasonal lawn care packages for the best value and consistent results.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 9 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">When do I pay for lawn care services?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            No payment is due until work is complete. We provide free estimates and only collect payment after you're satisfied with the service.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 10 -->
+      <div class="cs-faq-item">
+        <button class="cs-button">
+          <span class="cs-button-text">What areas do you serve for lawn care?</span>
+          <span class="cs-indicator" aria-hidden="true"></span>
+        </button>
+        <div class="cs-item-content">
+          <p>
+            We serve Macomb, Shelby Township, Chesterfield, and surrounding Southeast Michigan communities. We're locally owned and operated, serving Macomb County and nearby areas with dependable, professional lawn care.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %}
 
 {% endblock %}
