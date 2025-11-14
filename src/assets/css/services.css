@@ -501,5 +501,168 @@
     bottom: -13.75rem;
   }
 }
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-1404 {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+    position: relative;
+    z-index: 1;
+  }
+  #faq-1404 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #faq-1404 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 8px - 12px */
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+  }
+  #faq-1404 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0;
+    display: block;
+  }
+  #faq-1404 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #faq-1404 .cs-faq-group {
+    width: 100%;
+    max-width: 50rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  #faq-1404 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid #e8e8e8;
+    /* 16px - 24px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 2vw, 2rem);
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  #faq-1404 .cs-faq-item.active {
+    border-color: var(--primary);
+  }
+  #faq-1404 .cs-faq-item.active .cs-button {
+    color: var(--primary);
+  }
+  #faq-1404 .cs-faq-item.active .cs-button:before {
+    transform: rotate(180deg);
+  }
+  #faq-1404 .cs-faq-item.active .cs-item-content {
+    height: auto;
+    opacity: 1;
+    padding-top: 1rem;
+  }
+  #faq-1404 .cs-button {
+    font-size: 1.125rem;
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: 700;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: relative;
+  }
+  #faq-1404 .cs-button:hover {
+    cursor: pointer;
+  }
+  #faq-1404 .cs-button-text {
+    width: 90%;
+    display: block;
+  }
+  #faq-1404 .cs-indicator {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s;
+    /* Plus icon using pseudo-elements */
+  }
+  #faq-1404 .cs-indicator:before, #faq-1404 .cs-indicator:after {
+    content: "";
+    width: 0.75rem;
+    height: 0.125rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #faq-1404 .cs-indicator:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  #faq-1404 .cs-faq-item.active .cs-indicator {
+    transform: rotate(45deg);
+  }
+  #faq-1404 .cs-item-content {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s, padding-top 0.3s;
+  }
+  #faq-1404 .cs-item-content p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #faq-1404 .cs-item-content p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #faq-1404 .cs-button {
+    font-size: 1.25rem;
+  }
+}
 
 /*# sourceMappingURL=services.css.map */
