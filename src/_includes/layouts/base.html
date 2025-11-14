@@ -41,7 +41,7 @@
         <link rel="stylesheet" href="/assets/css/root.css">
         <link rel="stylesheet" href="/assets/css/dark.css">
         <script defer src="/assets/js/nav.js"></script>
-
+        
 
         {% block head %}{% endblock %}
 
@@ -67,6 +67,15 @@
             {% endif %}
         </title>
     </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9V1K6BMJV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q9V1K6BMJV');
+</script>
     <body>
         <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
