@@ -511,7 +511,154 @@ As a customer, always took great care of my lawn. Super friendly employees and a
     </div>
 </section>
 
+<!-- ============================================ -->
+<!--            Structured Data (Schema)          -->
+<!-- ============================================ -->
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Macomb Landscaping Services",
+  "image": "{{client.domain}}/assets/images/hero-background-1200.webp",
+  "@id": "{{client.domain}}",
+  "url": "{{client.domain}}",
+  "telephone": "{{client.phoneForTel}}",
+  "email": "{{client.email}}",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{client.address.city}}",
+    "addressRegion": "{{client.address.state}}",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.6789,
+    "longitude": -82.9312
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Macomb Township",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Shelby Township",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Chesterfield",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Sterling Heights",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Clinton Township",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Warren",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Mt Clemens",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Michigan"
+      }
+    }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "07:00",
+    "closes": "18:00"
+  },
+  "sameAs": [
+    "https://g.co/kgs/n6MgfG"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Philip Sutarov"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "These guys are the best they provide fast and quality services and they are super friendly. The guy who worked on my house Boris worked hard throughout the day to the end of the night to finish our front yard. They should charge more for their services."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Sandra Pisching"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Macomb Landscaping Services did an excellent job on cleaning up my flower beds in the front. Boris cut my bushes, weeded, edged and mulched. He took his time and made sure that everything was done right. Macomb Landscaping also cuts my lawn every week. I highly recommend them for any of your landscaping needs."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Jake Baxa"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Worked under these fine gentlemen for 1 cutting season. Super professional, placing the customer's concerns first. Great benefits! The expectations are reasonable. As a customer, always took great care of my lawn. Super friendly employees and always professional."
+    }
+  ]
+}
+</script>
 
 
 
