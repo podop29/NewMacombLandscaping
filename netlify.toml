@@ -5,3 +5,8 @@
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
   package = "@netlify/plugin-lighthouse"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = "public, max-age=0, must-revalidate"
