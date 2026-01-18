@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://www.macomblandscape.com/sitemap.xml
+Sitemap: https://macomblandscape.com/sitemap.xml

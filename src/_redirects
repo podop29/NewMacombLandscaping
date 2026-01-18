@@ -1,1 +1,25 @@
+# Force HTTPS
+http://macomblandscape.com/* https://macomblandscape.com/:splat 301!
+http://www.macomblandscape.com/* https://macomblandscape.com/:splat 301!
 
+# Redirect www to non-www
+https://www.macomblandscape.com/* https://macomblandscape.com/:splat 301!
+
+# Old hash URLs from previous site design -> new pages
+/#about /about/ 301
+/#contact /contact/ 301
+/#portfolio / 301
+/#testimonials / 301
+/#services /services/ 301
+
+# Trailing slash normalization for service pages
+/services/irrigation /services/irrigation/ 301
+/services/lawncare /services/lawncare/ 301
+/services/landscaping /services/landscaping/ 301
+/services/gutter-cleaning /services/gutter-cleaning/ 301
+/services/weed-control /services/weed-control/ 301
+/services/snow-removal /services/snow-removal/ 301
+/services /services/ 301
+/about /about/ 301
+/contact /contact/ 301
+/blog /blog/ 301
