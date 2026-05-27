@@ -52,20 +52,7 @@
         Home page - House Painting Contractors | Painters and Co. | TestCity, WA
         About Page - About us | Painters and Co.
         -->
-        <title>
-            {% if page.url == '/'%}
-                {{ title }}
-                |
-                {{ client.name }}
-                |
-                {{ client.address.city }},
-                {{ client.address.state }}
-            {% else %}
-                {{ title }}
-                |
-                {{ client.name }}
-            {% endif %}
-        </title>
+        <title>{{ title }}</title>
     </head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9V1K6BMJV"></script>
